@@ -1,0 +1,11 @@
+{
+  "name": "@observer/reports",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": { ".": "./src/index.ts" },
+  "dependencies": {
+    "@observer/core": "file:../core",
+    "@observer/config": "file:../config",
+    "@observer/analyzers": "file:../analyzers"
+  }
+}

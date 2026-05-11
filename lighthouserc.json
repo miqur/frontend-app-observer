@@ -1,0 +1,12 @@
+{
+  "ci": {
+    "collect": {
+      "staticDistDir": "./dist",
+      "numberOfRuns": 1,
+      "settings": {
+        "preset": "desktop",
+        "skipAudits": ["uses-http2"]
+      }
+    }
+  }
+}

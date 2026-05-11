@@ -1,0 +1,25 @@
+{
+  "name": "observer-agent",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "description": "Local multi-project engineering observability CLI",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "observer": "tsx apps/cli/src/index.ts",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "bin": {
+    "observer": "apps/cli/bin/run.mjs"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.9.0"
+  }
+}

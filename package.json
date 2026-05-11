@@ -1,0 +1,28 @@
+{
+  "name": "agent-frontend",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:observability": "cross-env OBSERVER_BUNDLE=1 OBSERVABILITY_BUNDLE=1 vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "knip": "knip",
+    "observer": "node observer-agent/apps/cli/bin/run.mjs analyze ."
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^5.0.0",
+    "@types/sql.js": "^1.4.11",
+    "cross-env": "^7.0.3",
+    "knip": "^5.36.0",
+    "rollup-plugin-visualizer": "^5.14.0",
+    "sql.js": "^1.13.0",
+    "svelte": "^5.16.0",
+    "svelte-check": "^4.1.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.6"
+  }
+}

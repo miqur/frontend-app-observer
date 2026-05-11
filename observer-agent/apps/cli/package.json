@@ -1,0 +1,22 @@
+{
+  "name": "@observer/cli",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "observer": "./bin/run.mjs"
+  },
+  "dependencies": {
+    "@observer/analyzers": "file:../../packages/analyzers",
+    "@observer/collectors": "file:../../packages/collectors",
+    "@observer/config": "file:../../packages/config",
+    "@observer/core": "file:../../packages/core",
+    "@observer/git": "file:../../packages/git",
+    "@observer/logger": "file:../../packages/logger",
+    "@observer/reports": "file:../../packages/reports",
+    "@observer/shared": "file:../../packages/shared",
+    "@observer/storage": "file:../../packages/storage",
+    "commander": "^12.1.0",
+    "ora": "^8.1.1",
+    "tsx": "^4.19.2"
+  }
+}

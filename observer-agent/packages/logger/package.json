@@ -1,0 +1,9 @@
+{
+  "name": "@observer/logger",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": { ".": "./src/index.ts" },
+  "dependencies": {
+    "chalk": "^5.3.0"
+  }
+}
